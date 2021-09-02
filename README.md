@@ -1,22 +1,24 @@
+[简体中文](https://github.com/gaowanliang/MagicPassword/blob/master/docs/README_zh-CN.md)
+
 # MagicPassword
-网址：https://pwd.gwliang.com
-## 不要再用生日或者宠物作为密码了!
-对每个站点都使用相同的密码是很危险的。
+web：https://pwd.gwliang.com
+## Stop using birthdays or pets as passwords!
+It is dangerous to use the same password for every site.
 
-如果您的密码被卷入了黑客入侵或数据泄露事件，您的所有网络资料都将面临风险。 这就是我开发 强密码生成器 的原因，让您为每个帐户配备强大且随机的密码，这些不同的密码由只有您知道的主口令保护。
-## 使用后，忘记密码吧。
-使用 本程序 后，您只需要记住……一个口令。
+If your passwords are involved in a hack or data breach, all your web data is at risk. That's why I developed Strong Password Generator, to let you equip each account with strong and random passwords that are different and protected by a master password that only you know.
+## After using it, forget your password.
+After using this program, you will only need to remember ...... One password.
 
-程序内部内置的不可逆算法将你的口令经过层层处理后返回你需要的密码格式。而针对不同网站，只需要设置不同的副口令（比如网站名，网站的网址等）就可以生成完全不同，没有规律的密码，通过各大浏览器自带的密码记录功能，一般只需要输入一次密码。即使忘记，只要记住主口令就可以很轻松的回溯密码。
+The program's internal built-in irreversible algorithm returns your password to the password format you need after layers of processing. And for different websites, you only need to set different sub-passwords (such as website name, website URL, etc.) to generate completely different, irregular passwords, and through the password recording function that comes with major browsers, you generally only need to enter the password once. Even if you forget, you can easily retrace your password by remembering the main password.
 
-## 这个程序如何生成密码？
-和大多数伟大的东西一样，背后的秘密是神秘配方：加密安全的无规律性、随机性、一致性（和一茶匙的魔法模型）。 本程序使用这些原料为您自动生成独一无二的密码。
+## How does this program generate passwords?
+As with most great things, the secret behind it is the mystery formula: the irregularity, randomness, and consistency of cryptographic security (and a teaspoon of magic model). This program uses these ingredients to automatically generate unique passwords for you.
 
-如果网站有特定的密码要求，您可以轻松调整设置，以根据这些要求定制结果。 对那些“忘记密码”的链接说再见吧。
-## 我应该使用哪种类型的密码？
-最好、最安全的密码由随机字符组成。使用 本程序 可为您大多数的帐户和服务生成这种强大且独特的密码。
+If the site has specific password requirements, you can easily adjust the settings to tailor the results to those requirements. Say goodbye to those "forgot password" links.
+## What type of password should I use?
+The best, most secure passwords consist of random characters. Use this program to generate such strong and unique passwords for most of your accounts and services.
 
-## 使用密码生成器生成安全问题和答案。
-如果您仍在使用个人信息作为安全问题的答案，请停止这一行为！这些信息通常可以轻松获得，让他人能够访问您的帐户。
+## Use the password generator to generate security questions and answers.
+If you are still using personal information as answers to security questions, stop doing so! This information can often be easily obtained to allow others to access your account.
 
-请在本程序的强随机密码生成器将问题(或问题的答案)设置为副口令，并将生成的内容作为答案。这样即便您忘记，也可以通过重新操作获取相同的内容。
+Please set the question (or the answer to the question) as a secondary password in the strong random password generator of this program, and use the generated content as the answer. This way even if you forget it, you can get the same content by re-operation.
