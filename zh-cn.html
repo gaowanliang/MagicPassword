@@ -1,0 +1,169 @@
+<html>
+
+<head>
+    <title>密码生成器</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
+    <link href="//cdn.jsdelivr.net/gh/gaowanliang/gitment-store/font.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/04/27/JhlmvT.png">
+
+</head>
+<style>
+    body {
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Noto Sans SC', sans-serif;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    num {
+        color: aqua;
+    }
+
+    zzts {
+        color: brown;
+    }
+
+    .ztop {
+        margin-top: 20px;
+
+    }
+
+    .mdui-checkbox {
+        padding-left: 29px;
+    }
+</style>
+
+<body class="mdui-theme-primary-green mdui-theme-accent-green">
+    <div class="mdui-appbar">
+        <div class="mdui-toolbar mdui-color-theme">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon"><img src="https://s1.ax1x.com/2020/04/27/JhlmvT.png"
+                    width="48" /></a>
+            <a href="javascript:;" class="mdui-typo-headline">高玩梁密码生成器</a>
+            <a href="index.html">English</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon"><img
+                    src="https://cdn.jsdelivr.net/gh/gaowanliang/p/img/tx.png" width="48" />
+            </a>
+        </div>
+    </div>
+
+
+    <div class="mdui-container"
+        style="border:4px double #000;margin-top: 20px;background-color:rgba(186, 220, 88,0.3); border-radius:10px;">
+        <div class="mdui-text-center">
+            <div class="mdui-typo-display-2 ztop">需要生成密码？试试 高玩梁 强密码生成器。</div>
+            <br>
+            <div class="mdui-typo-body-1-opacity">只需要一个主口令*，生成安全的密码以保持网络安全。</div>
+        </div>
+        <br>
+        <div id="pwd" class="mdui-center mdui-text-center mdui-typo-title"
+            style="width: 80%;border:2px solid #000;word-wrap:break-word;padding: 20px;">
+            请输入主口令
+        </div>
+
+        <br>
+        <div class="mdui-textfield mdui-textfield-floating-label">
+            <label class="mdui-textfield-label">主口令(必填)</label>
+            <textarea id="mpwd" class="mdui-textfield-input"></textarea>
+        </div>
+        <div style="border:2px dashed #000;margin: 10 0;">
+            <div class="mdui-container">
+                <div class="mdui-textfield mdui-textfield-floating-label">
+                    <label class="mdui-textfield-label">副口令(选填)</label>
+                    <textarea id="chars" class="mdui-textfield-input"></textarea>
+                </div>
+                <div class="mdui-valign mdui-row">
+                    <p class="mdui-text-center mdui-col-xs-2">
+                        长度
+                    </p>
+                    <label class="mdui-slider mdui-slider-discrete mdui-col-xs-5">
+                        <input id="count" type="range" step="1" min="8" max="128" value="20" />
+                    </label>
+                    <div class="mdui-col-xs-3 mdui-text-center">
+                        <label class="mdui-checkbox">
+                            <input id="num" type="checkbox" checked />
+                            <i class="mdui-checkbox-icon"></i>
+                            数字
+                        </label>
+                    </div>
+                    <div class="mdui-col-xs-3 mdui-text-center">
+                        <label class="mdui-checkbox">
+                            <input id="zzts" type="checkbox" />
+                            <i class="mdui-checkbox-icon"></i>
+                            符号
+                        </label></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdui-container">
+        <div class="mdui-col-xs-12  mdui-col-sm-6 mdui-typo">
+            <h1><strong>不要再用生日或者宠物作为密码了!</strong></h1>
+            对每个站点都使用相同的密码是很危险的。 <br>
+            如果您的密码被卷入了黑客入侵或数据泄露事件，您的所有网络资料都将面临风险。 这就是我开发 强密码生成器
+            的原因，让您为每个帐户配备强大且随机的密码，这些不同的密码由只有您知道的主口令保护。
+        </div>
+        <div class="mdui-col-xs-12 mdui-col-sm-6">
+            <img class="mdui-center" style="margin-top: 3em;" src="https://s1.ax1x.com/2020/04/26/Jg7Npn.png"
+                alt="Jg7Npn.png" border="0" />
+        </div>
+    </div>
+
+    <div class="mdui-container">
+        <div class="mdui-hidden-xs mdui-col-sm-6">
+            <img class="mdui-center" style="margin-top: 4em;" src="https://s1.ax1x.com/2020/04/27/Jh3bbF.png"
+                alt="J2tfYR.png" border="0" />
+        </div>
+
+        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-typo mdui-float-right">
+            <h1><strong>使用后，忘记密码吧。</strong></h1>
+            使用 本程序 后，您只需要记住……一个口令。<br>
+            程序内部内置的不可逆算法将你的口令经过层层处理后返回你需要的密码格式。而针对不同网站，只需要设置不同的副口令（比如网站名，网站的网址等）就可以生成完全不同，没有规律的密码，通过各大浏览器自带的密码记录功能，一般只需要输入一次密码。即使忘记，只要记住主口令就可以很轻松的回溯密码。
+        </div>
+        <div class="mdui-hidden-sm-up">
+            <img style="margin-top: 3em;" src="https://s1.ax1x.com/2020/04/27/Jh3bbF.png" alt="J2tfYR.png" border="0" />
+        </div>
+    </div>
+    <div class="mdui-container">
+        <div class="mdui-col-xs-12  mdui-col-sm-6 mdui-typo">
+            <h1><strong>这个程序如何生成密码？</strong></h1>
+            和大多数伟大的东西一样，背后的秘密是神秘配方：加密安全的无规律性、随机性、一致性（和一茶匙的魔法模型）。 本程序使用这些原料为您自动生成独一无二的密码。<br>
+            如果网站有特定的密码要求，您可以轻松调整设置，以根据这些要求定制结果。 对那些“忘记密码”的链接说再见吧。
+        </div>
+        <div class="mdui-col-xs-12 mdui-col-sm-6">
+            <img class="mdui-center" style="margin-top: 3em;" src="https://s1.ax1x.com/2020/04/26/J2W9G6.png"
+                border="0" />
+        </div>
+    </div>
+    <div class="mdui-container ztop">
+        <div class="mdui-typo-title mdui-text-center"><strong>我应该使用哪种类型的密码？</strong></div>
+        <div class="mdui-typo-headline mdui-text-center" id="showHow"
+            style="margin-top:40px;letter-spacing:8px;word-wrap:break-word;">
+            NW<num>5</num>Jshoj<num>7</num>zp<num>8</num>BR<num>3</num>ckEpg</div><br>
+        <p class="mdui-text-center">最好、最安全的密码由随机字符组成。使用 本程序 可为您大多数的帐户和服务生成这种强大且独特的密码。</p>
+    </div>
+    <div class="mdui-container">
+        <div class="mdui-col-xs-12  mdui-col-sm-6 mdui-typo">
+            <h1><strong>使用密码生成器生成安全问题和答案。</strong></h1>
+            如果您仍在使用个人信息作为安全问题的答案，请停止这一行为！这些信息通常可以轻松获得，让他人能够访问您的帐户。
+            <br>
+            请在本程序的强随机密码生成器将问题(或问题的答案)设置为副口令，并将生成的内容作为答案。这样即便您忘记，也可以通过重新操作获取相同的内容。
+        </div>
+        <div class="mdui-col-xs-12 mdui-col-sm-6">
+            <img class="mdui-center" style="margin-top: 3em;" src="https://s1.ax1x.com/2020/04/27/JRqVfg.png"
+                alt="Jg7Npn.png" border="0" />
+        </div>
+    </div>
+    <script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.md5/index.min.js"></script>
+    <script src="static/k.js"></script>
+
+</body>
+
+</html>
